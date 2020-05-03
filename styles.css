@@ -1,0 +1,82 @@
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-blue {
+  background: #3f7eb9;
+}
+.bg-yellow {
+  background: #f2b82b;
+}
+.bg-pink {
+  background: #f26579;
+}
+
+body {
+  background: #383d44;
+}
+
+/* sectionx */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  height: 100vh;
+  margin: auto;
+  padding: 30px 20px;
+  overflow: hidden;
+}
+
+/* button-container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0 50px;
+}
+.button-container button {
+  border: none;
+  outline: none;
+  height: 32px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.button-container button:hover {
+  transform: scale(1.1);
+}
+.img-btn {
+  background: none;
+}
+.img-btn img {
+  width: 30px;
+}
+.text-btn {
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+/* shopping-list & shopping-item */
+.shopping-list {
+  list-style: none;
+  width: 100%;
+  overflow-y: scroll;
+}
+.shopping-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.shopping-item.blind {
+  display: none;
+}
+.shopping-item img {
+  width: 30px;
+  margin-right: 10px;
+}

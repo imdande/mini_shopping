@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Shopping Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <section>
+      <h1>
+        <a href="index.html"><img src="./imgs/logo.png" alt="logo" /></a>
+      </h1>
+      <div class="button-container">
+        <button class="img-btn" onclick="sortByCase('-t')">
+          <img src="./imgs/blue_t.png" alt="t-shirts" />
+        </button>
+        <button class="img-btn" onclick="sortByCase('-p')">
+          <img src="./imgs/blue_p.png" alt="pants" />
+        </button>
+        <button class="img-btn" onclick="sortByCase('-s')">
+          <img src="./imgs/blue_s.png" alt="skirt" />
+        </button>
+        <button class="text-btn bg-blue" onclick="sortByCase('blue')">
+          Blue
+        </button>
+        <button class="text-btn bg-yellow" onclick="sortByCase('yellow')">
+          Yellow
+        </button>
+        <button class="text-btn bg-pink" onclick="sortByCase('pink')">
+          Pink
+        </button>
+      </div>
+      <ul class="shopping-list"></ul>
+    </section>
+  </body>
+</html>
